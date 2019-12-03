@@ -3,7 +3,7 @@ import os
  
 from flask import Flask, render_template, request, redirect, url_for
 from werkzeug.utils import secure_filename
-from keras.preprocessing.image import ImageDataGenerator, load_img, img_to_array
+from keras import ImageDataGenerator, load_img, img_to_array
 from keras.models import Sequential, load_model
 from flask_cors import CORS
 
@@ -113,4 +113,4 @@ app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
 
 if __name__ == "__main__":
     app.debug=False
-    app.run(host='localhost', port=3200,threaded=False)
+    app.run(host='54.183.62.17', port=3200,threaded=False)
