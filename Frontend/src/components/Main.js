@@ -21,7 +21,7 @@ import LoadingPage from './LoadingPage/LoadingPage'
 
 // Create a Main Component
 class Main extends Component {
-  render () {
+  render() {
     return (
       <BrowserRouter>
         <div>
@@ -29,7 +29,7 @@ class Main extends Component {
           <Route path='/' component={Navbarhome} />
           <Route path='/Home' exact component={HomeLanding} />
           <Route path='/login' exact component={LoginPage} />
-          <Route path='/' exact component={landingPage} />
+          <Route path='/' exact component={HomeLanding} />
           <Route path='/signUp' exact component={signUp} />
           <Route path='/userPage' exact component={userPage} />
           <Route path='/addService' exact component={adminPage} />
@@ -37,11 +37,11 @@ class Main extends Component {
           <Route path='/Questionaire' exact component={Questionaire} />
           <Route path='/estimateprice' exact component={EstimatePrice} />
           <Route path='/uploadpicture' exact component={PicUpload} />
-          <Route path='/loading' exact component={LoadingPage}/>
-          <Route path='/result' exact component={ResultPage}/>
+          <Route path='/loading' exact component={LoadingPage} />
+          <Route path='/result' exact component={ResultPage} />
 
           <Route path='/faq' exact component={faq} />
-          <Route path='/footer'  component={Footer}/>
+          <Route path='/footer' component={Footer} />
         </div>
       </BrowserRouter>
     )
