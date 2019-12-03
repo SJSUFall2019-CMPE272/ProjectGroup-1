@@ -112,4 +112,4 @@ app.wsgi_app = SharedDataMiddleware(app.wsgi_app, {
 
 if __name__ == "__main__":
     app.debug=False
-    app.run((host='54.183.62.17', port=3200,threaded=False)
+    app.run(host='54.183.62.17', port=3200,threaded=False)
