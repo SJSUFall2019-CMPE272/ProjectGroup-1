@@ -1,20 +1,25 @@
 .navbar {
   font: calibri;
   font-size: 20px;
-  color:white;
-  border-bottom: 2px ;
+  color: white;
+  border-bottom: 2px;
   border-bottom-color: black;
-  width:100vw;
+  width: 100vw;
 }
 
-.dropdown-menu{
-  background: rgba(255,255,255,0.7);
-  color:white;
+.dropdown-menu {
+  background: rgba(255, 255, 255, 0.7);
+  color: white;
 }
 
+a:hover {
+  color: #ffff;
+  text-decoration: none;
+  text-decoration-color: transparent;
+  cursor: pointer;
+}
 
 .navbar .nav-item .nav-link {
- 
   font-family: Lato, Arial, Helvetica Neue, sans-serif;
   line-height: 1.5rem;
   min-height: 48px;
@@ -25,9 +30,11 @@
   border-color: #1d9496;
 }
 
-a{
+a {
   color: #fff;
+  text-decoration: none;
+  text-decoration-color: transparent;
 }
-.logoname{
+.logoname {
   font: sans-serif;
 }

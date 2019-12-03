@@ -8,7 +8,7 @@ import { States } from '../../URLSettings'
 import Contact from '../Contact/Contact'
 
 class Navbarhome extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
     this.logout = this.logout.bind(this)
   }
@@ -20,7 +20,7 @@ class Navbarhome extends Component {
     this.props.history.push('/home')
   }
 
-  render () {
+  render() {
     let loggedIn = localStorage.getItem('name') === null
     let isAdmin = localStorage.getItem('userType') === 'mentor'
     let user = localStorage.getItem('name')
@@ -36,7 +36,7 @@ class Navbarhome extends Component {
     return (
       <nav className='navbar navbar-expand-sm  fixed-top'>
         <a className='navbar-brand' href='/'>
-         <p style={{marginLeft:'50px', fontWeight:'strong', fontSize:'35px', font:'Satisfy'}} className='logoname'>Phone2Cash</p>
+          <p style={{ marginLeft: '50px', fontWeight: 'strong', fontSize: '35px', font: 'Satisfy' }} className='logoname'>Phone2Cash</p>
         </a>
 
         <div className='collapse navbar-collapse' id='navbarSupportedContent'>
@@ -51,8 +51,8 @@ class Navbarhome extends Component {
                 </a>
               </li>
             ) : (
-              ''
-            )}
+                ''
+              )}
             {isAdmin ? (
               <li className='nav-item btn-link'>
                 <a className='nav-link'>
@@ -64,8 +64,8 @@ class Navbarhome extends Component {
                 </a>
               </li>
             ) : (
-              ''
-            )}
+                ''
+              )}
             {isAdmin ? (
               <li className='nav-item btn-link'>
                 <a className='nav-link'>
@@ -77,11 +77,10 @@ class Navbarhome extends Component {
                 </a>
               </li>
             ) : (
-              ''
-            )}
+                ''
+              )}
             <li className='nav-item btn-link'>
-              <a className='nav-link' href='/#about'>
-                {' '}
+              <a style={{ textDecorationColor: 'transparent' }} className='nav-link' href='/#about'>
                 About Us <span className='sr-only'>current</span>
               </a>
             </li>
@@ -105,12 +104,12 @@ class Navbarhome extends Component {
 
             {!loggedIn ? (
               <li className='nav-item dropdown'>
-                
+
                 <div className='dropdown-menu'>{states}</div>
               </li>
             ) : (
-              ''
-            )}
+                ''
+              )}
             {!loggedIn ? (
               <li className='nav-item dropdown'>
                 <a
@@ -134,8 +133,8 @@ class Navbarhome extends Component {
                 </div>
               </li>
             ) : (
-              ''
-            )}
+                ''
+              )}
             {loggedIn ? (
               <li className='nav-item btn-link'>
                 <a className='nav-link'>
@@ -146,11 +145,11 @@ class Navbarhome extends Component {
                 </a>
               </li>
             ) : (
-              ''
-            )}
+                ''
+              )}
           </ul>
         </div>
-      </nav>
+      </nav >
     )
   }
 }
