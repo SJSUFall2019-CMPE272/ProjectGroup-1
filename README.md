@@ -2,6 +2,11 @@
 An application which estimates the cost of a phone by considering its screen condition, whether
 broken or intact, and its original price.
 
+# Application
+
+<img width="500" alt="architecture" src="">
+
+
 ## Abstract
 
 A streamlined process of turning in our old mobiles in exchange for cash would significantly
