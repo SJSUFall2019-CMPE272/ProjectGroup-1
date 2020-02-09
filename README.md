@@ -4,7 +4,13 @@ broken or intact, and its original price.
 
 # Application
 
-<img width="500" alt="architecture" src="">
+<img width="500" alt="architecture" src="Capture.JPG">
+<img width="500" alt="architecture" src="Page 1.jpg">
+<img width="500" alt="architecture" src="Page2.jpg">
+<img width="500" alt="architecture" src="Page3.jpg">
+
+
+
 
 
 ## Abstract
